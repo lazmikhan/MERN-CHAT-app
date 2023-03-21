@@ -5,13 +5,13 @@ const userSchema=mongoose.Schema(
         type:String , trim:true,required:true
        },
        email: {
-        type:String , trim:true,required:true
+        type:String , trim:true,required:true,unique:true
        },
        password: {
         type:String , trim:true,required:true
        },
        picture: {
-        type:String , trim:true,required:true,default:'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-image-icon-default-avatar-profile-icon-social-media-user-vector-image-209162840.jpg'
+        type:String , trim:true,default:'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-image-icon-default-avatar-profile-icon-social-media-user-vector-image-209162840.jpg'
        }
     }, {timestamps:true}
 )
